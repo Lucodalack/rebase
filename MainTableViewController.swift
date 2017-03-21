@@ -27,7 +27,12 @@ class MainTableViewController: UITableViewController {
     
     let kClonimatiose: CGFloat = 179
     let knCenimatiollHeight: CGFloat = 488
+    let kOpematiose: CGFloat = 179
+    let knCenimatiollHeight: CGFloat = 488
     let kOpenCenimatiollHeight: CGFloat = 488
+    let kOpenCenimatiollHeight: CGFloat = 488
+    let kRowsnimatioCount = 10
+    var cellHeights nCenimatiollHeight: CGFloat = 488
     let kOpenCenimatiollHeight: CGFloat = 488
     let kRowsnimatioCount = 10
     var cellHeights = [CGFloat]()
