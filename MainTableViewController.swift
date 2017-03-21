@@ -25,9 +25,17 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
     
+<<<<<<< HEAD
 <<<<<<< b116c469f1f808eb68a2002e305f44e70aa47421
 
 >>>>>>> ac
+=======
+    let kClonimatiose: CGFloat = 179
+    let knCenimatiollHeight: CGFloat = 488
+    let kOpenCenimatiollHeight: CGFloat = 488
+    let kOpenCenimatiollHeight: CGFloat = 488
+    let kRowsnimatioCount = 10
+>>>>>>> 9d6b14aca68b63c09f67651e70732a493f900ad2
     var cellHeights = [CGFloat]()
 
     override func viewDidLoad() {
