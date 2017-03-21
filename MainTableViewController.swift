@@ -26,16 +26,7 @@ import UIKit
 class MainTableViewController: UITableViewController {
     
 <<<<<<< b116c469f1f808eb68a2002e305f44e70aa47421
-    let kClonimatiose: CGFloat = 179
-    let knCenimatiollHeight: CGFloat = 488
-    let kOpenCenimatiollHeight: CGFloat = 488
-    let kOpenCenimatiollHeight: CGFloat = 488
-    let kRowsnimatioCount = 10
-=======
- //van tien d toi dayß
 
-    let kRowsCount = 10
-    
 >>>>>>> ac
     var cellHeights = [CGFloat]()
 
