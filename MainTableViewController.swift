@@ -25,7 +25,9 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
     
-    let kCloseCellHeight: CGFloat = 179
+    let kClosekCloseCellHeight: CGFloat = 179
+    let kOpenCelkCloseCellHeight: CGFloat = 179
+    let kOpenCellHeiglHeigCellHeight: CGFloat = 179
     let kOpenCellHeight: CGFloat = 488
 
     let kRowsCount = 10
