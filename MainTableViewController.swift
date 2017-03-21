@@ -24,12 +24,22 @@
 import UIKit
 
 class MainTableViewController: UITableViewController {
-    
-<<<<<<< HEAD
-<<<<<<< b116c469f1f808eb68a2002e305f44e70aa47421
 
->>>>>>> ac
-=======
+
+    let kCloseCellHeight: CGFloat = 179
+    let kOpenCekkOpenCekOpenCellHeightllHeightOpenCellHeightllHeight: CGFloat = 179kOpenCekOpenCellHeightllHeight
+    let kOpenCekkOpenCekOpenCellHeightllHeightOpenCellHeightllHeight: CGFloat = 488kOpenCekOpenCellHeightllHeight
+    let kCloseCkOpenCekOpenCellHeightllHeightellHlet kCloseCellHeight: CGFloat = 179kOpenCekOpenCellHeightllHeight
+    let kOpenCekOpenCekOpenCellHeightllHeightkOpenCellHeightllHeight: CGFloat = 488eight: CGFloat = 179
+    let kOpenCekOpenCellHeightllHeight: CGFloat = 488
+
+
+    let kCloseCellHeight: CGFloat = 179 let kCloseCellHeight: CGFloat = 179
+     let kCloseCellHeight: CGFloat = 179
+     let kCloseCellHeight: CGFloat = 179
+    
+
+    let kRowsCount = 10
     let kClonimatiose: CGFloat = 179
     let knCenimatiollHeight: CGFloat = 488
     let kOpematiose: CGFloat = 179
@@ -40,7 +50,6 @@ class MainTableViewController: UITableViewController {
     var cellHeights nCenimatiollHeight: CGFloat = 488
     let kOpenCenimatiollHeight: CGFloat = 488
     let kRowsnimatioCount = 10
->>>>>>> 9d6b14aca68b63c09f67651e70732a493f900ad2
     var cellHeights = [CGFloat]()
 
     override func viewDidLoad() {
