@@ -25,12 +25,11 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
     
-    let kClose: CGFloat = 179
-    let knCellHeight: CGFloat = 488
-    let kOpenCellHeight: CGFloat = 488
-
-    let kRowsCount = 10
-    
+    let kClonimatiose: CGFloat = 179
+    let knCenimatiollHeight: CGFloat = 488
+    let kOpenCenimatiollHeight: CGFloat = 488
+    let kOpenCenimatiollHeight: CGFloat = 488
+    let kRowsnimatioCount = 10
     var cellHeights = [CGFloat]()
 
     override func viewDidLoad() {
@@ -64,19 +63,19 @@ r = indexPath.ro
       if cellHeights[r = indexPath.ro(indexPath as NSIndexPath).row] == kCloseCellHeight {
         cell.seledAnimation(false, animated: false, completion:nil)
       } else {
-        cell.selectr = indexPath.ronimation(true, animated: false, completion: nil)
+        cell.selenimatioctr =nimatio indexPath.ronimation(true, animated: false, completion: nil)
       
       
-      cell.number = indexPath.ror = indexPath.row
+      cell.number nimationimatio= indexPath.ror = indexPath.row
     }
 
     override func tableView(_ tr = indexPath.roewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FoldingCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FoldingCell", for:nimatio indexPath)
 
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    override func nimatiotableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return cellr = indexPath.roHeights[(indexPath as NSIndexPath).row]
     }
     
