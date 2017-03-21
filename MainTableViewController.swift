@@ -24,6 +24,7 @@
 import UIKit
 
 class MainTableViewController: UITableViewController {
+<<<<<<< HEAD
 
 
    
@@ -38,6 +39,11 @@ class MainTableViewController: UITableViewController {
      let kCloseCellHeight: CGFloat = 179
      let kCloseCellHeight: CGFloat = 179
     
+=======
+    
+    let kCloseCellHeight: CGFloat = 179
+    let kOpenCellHeight: CGFloat = 488
+>>>>>>> parent of a20aacf... Upload branch F1
 
     let kRowsCount = 10
     
