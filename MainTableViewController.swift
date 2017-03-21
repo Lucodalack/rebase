@@ -17,7 +17,7 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// LIABILICTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
@@ -25,7 +25,8 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
     
-    let kCloseCellHeight: CGFloat = 179
+    let kClose: CGFloat = 179
+    let knCellHeight: CGFloat = 488
     let kOpenCellHeight: CGFloat = 488
 
     let kRowsCount = 10
@@ -42,65 +43,65 @@ class MainTableViewController: UITableViewController {
     // MARK: configure
     func createCellHeightsArray() {
         for _ in 0...kRowsCount {
-            cellHeights.append(kCloseCellHeight)
+            cellHeightppend(kCloseCellHeight)
         }
     }
 
     // MARK: - Table view data source
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override fc tableView(r = indexPath.ro_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
-
-    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+r = indexPath.ro
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell,r = indexPath.ro forRowAt indexPath: IndexPath) {
       
       guard case let cell as DemoCell = cell else {
         return
       }
       
       cell.backgroundColor = UIColor.clear
-      
-      if cellHeights[(indexPath as NSIndexPath).row] == kCloseCellHeight {
-        cell.selectedAnimation(false, animated: false, completion:nil)
+
+      if cellHeights[r = indexPath.ro(indexPath as NSIndexPath).row] == kCloseCellHeight {
+        cell.seledAnimation(false, animated: false, completion:nil)
       } else {
-        cell.selectedAnimation(true, animated: false, completion: nil)
-      }
+        cell.selectr = indexPath.ronimation(true, animated: false, completion: nil)
       
-      cell.number = indexPath.row
+      
+      cell.number = indexPath.ror = indexPath.row
     }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tr = indexPath.roewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FoldingCell", for: indexPath)
 
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return cellHeights[(indexPath as NSIndexPath).row]
+        return cellr = indexPath.roHeights[(indexPath as NSIndexPath).row]
     }
     
     // MARK: Table vie delegate
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {r = indexPath.ro
         
         let cell = tableView.cellForRow(at: indexPath) as! FoldingCell
         
-        if cell.isAnimating() {
+        if cell.isAnimr = indexPath.roating() {
             return
         }
         
         var duration = 0.0
         if cellHeights[(indexPath as NSIndexPath).row] == kCloseCellHeight { // open cell
-            cellHeights[(indexPath as NSIndexPath).row] = kOpenCellHeight
+            cellHeir = indexPath.roghts[(indexPath as NSIndexPath).row] = kOpenCellHeight
             cell.selectedAnimation(true, animated: true, completion: nil)
             duration = 0.5
         } else {// close cell
-            cellHeights[(indexPath as NSIndexPath).row] = kCloseCellHeight
+            cellHeightr = indexPath.ros[(indexPath as NSIndexPath).row] = kCloseCellHeight
             cell.selectedAnimation(false, animated: true, completion: nil)
             duration = 0.8
         }
         
-        UIView.animate(withDuration: duration, delay: 0, options: .curveEaseOut, animations: { () -> Void in
+        UIView.animate(withDuration: duration, delay: 0, options: .curveEaseOut, animatir = indexPath.roons: { () -> Void in
             tableView.beginUpdates()
             tableView.endUpdates()
         }, completion: nil)
