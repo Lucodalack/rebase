@@ -25,10 +25,7 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
     
-    let kClosekCloseCellHeight: CGFloat = 179
-    let kOpenCelkCloseCellHeight: CGFloat = 179
-    let kOpenCellHeiglHeigCellHeight: CGFloat = 179
-    let kOpenCellHeight: CGFloat = 488
+    van tien
 
     let kRowsCount = 10
     
@@ -40,7 +37,7 @@ class MainTableViewController: UITableViewController {
         createCellHeightsArray()
         self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "background")!)
     }
-    
+    ß
     // MARK: configure
     func createCellHeightsArray() {
         for _ in 0...kRowsCount {
